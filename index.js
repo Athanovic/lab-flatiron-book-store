@@ -30,9 +30,9 @@ const bookStore = [
   bookStore.forEach(book => {
     const li = document.createElement('li');
     li.innerHTML = `
+      <img src="${book.imageUrl}" alt="${book.title}">
       <h3>${book.title}</h3>
       <p>Author: ${book.author}</p>
-      <img src="${book.imageUrl}" alt="${book.title}">
     `;
     bookList.appendChild(li);
   });
