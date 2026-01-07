@@ -29,10 +29,20 @@ const bookStore = [
   // Loop through each book and add it to the list
   bookStore.forEach(book => {
     const li = document.createElement('li');
-    li.innerHTML = `
-      <img src="${book.imageUrl}" alt="${book.title}">
-      <h3>${book.title}</h3>
-      <p>Author: ${book.author}</p>
-    `;
+    
+    const img = document.createElement('img');
+    img.src = book.imageUrl;
+    img.alt = book.title;
+    
+    const title = document.createElement('h3');
+    title.textContent = book.title;
+    
+    const author = document.createElement('p');
+    author.textContent = `Author: ${book.author}`;
+    
+    li.appendChild(img);
+    li.appendChild(title);
+    li.appendChild(author);
+    
     bookList.appendChild(li);
   });
