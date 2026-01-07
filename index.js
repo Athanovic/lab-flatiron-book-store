@@ -3,7 +3,7 @@ const bookStore = [
     {
       title: "Eloquent JavaScript: A Modern Introduction to Programming",
       author: "Marijn Haverbeke",
-      imageUrl: "https://images-na.ssl-images-amazon.com/images/I/51IKycqTPJL._SX218_BO1,204,203,200_QL40_FMwebp_.jpg"
+      imageUrl: "https://images-na.ssl-images-amazon.com/images/I/51IKycqTPJL._SX218_BO1,204,203,200_.jpg"
     },
     {
       title: "JavaScript and JQuery: Interactive Front-End Web Development",
